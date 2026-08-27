@@ -24,6 +24,5 @@ const countVow = (str) => {
         }
     }
 
-    console.log(`There are ${count} in ${str} `);
     return count;
 }
