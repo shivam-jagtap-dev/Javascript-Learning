@@ -388,3 +388,7 @@ const arrowSum = (a, b) => {
 const mul = (a, b) => {
     console.log(a * b);
 }
+
+const printHello = () => {
+    console.log("Hello World");
+}
