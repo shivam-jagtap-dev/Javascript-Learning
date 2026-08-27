@@ -352,43 +352,58 @@ console.log("Shivam\tJagtap"); // \t tab space
     console.log(arr);
 }
 
+{
+    //Functions in Javascript
+    //Ex console.log("Hello world"); --> here the log is the function that has already a work that it does
 
-//Functions in Javascript
-//Ex console.log("Hello world"); --> here the log is the function that has already a work that it does
+    function myFunction() {
+        console.log("Welcome guys!");
+        console.log("We are learning JS");
+    }
 
-function myFunction() {
-    console.log("Welcome guys!");
-    console.log("We are learning JS");
+    myFunction();
+
+    function myFunction2(msg) { //parameter
+        console.log(msg);
+    }
+
+    myFunction2("I love Js"); //argument
+
+    //Let try to create a Function that is used to sum of 2 numbers
+    //Sum funnction
+    function sum(a, b) {
+        //local variables
+        let s = a + b;
+        return s;
+    }
+    sum(5, 3);
+
+
+    //Arrow functions
+    //Modern sum function
+    const arrowSum = (a, b) => {
+        console.log(a + b);
+    }
+
+    const mul = (a, b) => {
+        console.log(a * b);
+    }
+
+    const printHello = () => {
+        console.log("Hello World");
+    }
 }
 
-myFunction();
+{
+    //forEach loop in Arrays (higher order functions)
+    //Ex str.toUpperCase() --> Here upperCase is a function but aslo amethod because it is used only for strings
+    let arr = [1, 2, 3, 4, 5];
+    arr.forEach(function printVal(val) { //each value at each index
+        console.log(val);
+    })
 
-function myFunction2(msg) { //parameter
-    console.log(msg);
-}
-
-myFunction2("I love Js"); //argument
-
-//Let try to create a Function that is used to sum of 2 numbers
-//Sum funnction
-function sum(a, b) {
-    //local variables
-    let s = a + b;
-    return s;
-}
-sum(5, 3);
-
-
-//Arrow functions
-//Modern sum function
-const arrowSum = (a, b) => {
-    console.log(a + b);
-}
-
-const mul = (a, b) => {
-    console.log(a * b);
-}
-
-const printHello = () => {
-    console.log("Hello World");
+    let cities = ["pune", "delhi", "Mumbai"];
+    cities.forEach((val, idx, arr) => {
+        console.log(val.toUpperCase(), idx, arr);
+    })
 }
