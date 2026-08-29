@@ -407,3 +407,31 @@ console.log("Shivam\tJagtap"); // \t tab space
         console.log(val.toUpperCase(), idx, arr);
     })
 }
+
+{
+    //Some more Array methods
+    //Map Method 
+    let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    nums.map((val) => {
+        console.log(val);
+    });
+
+    let numbers = [45, 34, 23];
+    let newnumbers = numbers.map((val) => {
+        return val;
+    });
+    console.log(newnumbers);
+
+    //Filter Method
+    let newNums = nums.filter((val) => {
+        return val % 2 === 0;
+    });
+    console.log(newNums);
+
+    //Reduce Method 
+    const output = nums.reduce((res, curr) => {
+        return res + curr;
+    });
+
+    console.log(output);
+}
