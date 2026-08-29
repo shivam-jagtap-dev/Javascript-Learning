@@ -1,0 +1,4 @@
+let nums = [2, 3, 4, 5, 6,];
+nums.forEach((num) => {
+    console.log(num ** 2);// can also be written as num * num
+});
